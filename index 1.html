@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Home Navigation System</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_MAPS_API_KEY&libraries=places&callback=initMap" async defer></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>College Home Navigation System</h1>
+        </header>
+        
+        <!-- Map Container -->
+        <div id="map"></div>
+
+        <!-- Search and Navigation Bar -->
+        <div class="navigation-bar">
+            <input type="text" id="search-input" placeholder="Search for locations..." />
+            <button id="search-btn">Search</button>
+            <button id="use-voice-btn">Use Voice</button>
+        </div>
+
+        <!-- Directions Button -->
+        <button id="directions-btn" style="display:none;">Get Directions</button>
+        
+        <!-- Chatbot Interface -->
+        <div class="chatbox-container">
+            <div id="chatbox"></div>
+            <input type="text" id="chat-input" placeholder="Ask me for directions..." />
+            <button id="chat-send-btn">Send</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
